@@ -1,15 +1,22 @@
-const parallax1 = document.getElementById('home-content');
+const carouselParallax = document.querySelector('header');
 
 window.addEventListener('scroll', function(){
-    let offset1 = window.pageYOffset;
-    parallax1.style.backgroundPositionY = -offset1 * 0.130 + "px";
+    let carouselOffset = window.pageYOffset;
+    carouselParallax.style.backgroundPositionY = carouselOffset * 0.4+ "px";
     
 })
-    
-const parallax2 = document.getElementById('men-content');
 
-window.addEventListener('scroll', function(){
-    let offset2 = window.pageYOffset;
-    parallax2.style.backgroundPositionY = -offset2 * 0.2 + "px";
     
-})
+
+function splitScroll(){
+    const controller = new ScrollMagic.Controller();
+    new ScrollMagic.Scene({
+        duration: '200%',
+        triggerElement: '.about-us',
+        triggerHook: 0
+    })
+        .setPin('.about-us')
+        .addTo(controller);
+}
+
+splitScroll();

@@ -17,6 +17,7 @@ body {
 
 .brand-logo {
     width:100%;
+    padding: 3rem auto;
 }
 
 .navigation-bar {
@@ -44,13 +45,6 @@ body {
     border-top: red 2px solid;
 }
 /*****************body********************************/
-
-.content-heading {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
 .heading {
     font-size: 5vmax;
 }
@@ -58,12 +52,30 @@ body {
 .sub-heading {
     font-size: 3vmax;
 }
+.content-heading {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
+.find-heading {
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: center;
+}
 
 .slide {
     width: 60%;
     margin: auto;
     padding: 2% 0;
+}
+
+@media screen and (max-width: 450px) {
+    .slide {
+        width: 90%;
+        margin: auto;
+        padding: 2% 0;
+    }
 }
 
 img {
@@ -81,6 +93,12 @@ img {
 
 .heart {
     width: 2%;
+}
+
+.men-title {
+    color:white;
+    display: flex;
+    justify-content: center;
 }
 
 .men-links {
@@ -106,5 +124,59 @@ img {
 
 .copy-rights {
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
+
+
+/********About********/
+
+.about {
+    display: flex;
+}
+
+.about-us {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-info {
+    width: 50%;
+
+}
+
+.about-info div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    width: 20%;
+    margin: 1rem;
+}
+
+
+@media screen and (max-width: 380px) {
+    .about-us {
+        width: 50%;
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-info div {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 /************effect**************/
