@@ -76,6 +76,13 @@ body {
         margin: auto;
         padding: 2% 0;
     }
+    
+    .navigation-brand {
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        margin: 3vmax auto;
+    }
 }
 
 img {
