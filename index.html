@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="talent, models, agency, artists, artist management, our future talent management">
+    <meta name="description" content="Our Future Talent Management is a registered talent management agency that intends having a footprint in the entertainment industry not just in South Africa but all across the world.">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="icon" href="images/favicon.ico">
@@ -41,6 +43,10 @@
             height: 100vh;
         }
 
+        .social-icon {
+          width: 5vmax;
+        }
+
         }
 
         .card {
@@ -58,8 +64,7 @@
             right: 0.5rem;
         }
 
-        .drop-link {
-        }
+        
 
 
  
@@ -73,39 +78,28 @@
               <img class="brand-logo" src="images/our-future-logo.jpeg" alt="ourfuturetalentmanagement">
           </a>
       </div>
-          <nav class="navbar sticky-top navbar-expand-md">
+          <nav class="navbar sticky-top navbar-expand-md" style="background-color: lightgoldenrodyellow;">
               <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#our-future-menu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <button id="menu-bar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#our-future-menu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                       <img class="menu-icon" src="images/menu-icon.png">
                   </button>
                   <div class="collapse navbar-collapse" id="our-future-menu">
                       <div class="navbar-nav">
                           <a class="nav-link navigation-links  active-page" aria-current="page" href="index.html">Home</a>
-                          <a class="nav-link navigation-links" href="#about">About</a>
-                          <li class="nav-item drop-link dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <span class="navigation-links drop-link"> Artists</span>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="#men">Men</a></li>
-                              <li><a class="dropdown-item" href="#">Women</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Comedians</a></li>
-                              <li><a class="dropdown-item" href="#">Poets</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Choirs</a></li>
-                              <li><a class="dropdown-item" href="#">Musical Groups</a></li>
-                            </ul>
-                          </li>
+                          <a class="nav-link navigation-links" href="#">About</a>
+                          <a class="nav-link navigation-links" href="#">Women</a>
+                          <a class="nav-link navigation-links" href="#">Men</a>
+                          <a class="nav-link navigation-links" href="#">Services</a>
+                          <a class="nav-link navigation-links" href="#">Join</a>
+                          <a class="nav-link navigation-links" href="#">Our Team</a>
                           <a class="nav-link navigation-links" href="#">Contact Us</a>
-                      </div>
                   </div>
               </div>
           </nav>
 
       <header id="home">
       <div class="content-heading">
-        <span class="heading"> Our Future Talent Management <br/><span class="sub-heading">"reaching The Stars"</span></span>
+        <span class="heading"> Our Future Talent Management <br/><span class="sub-heading">"Reaching The Stars"</span></span>
       </div>
 
       <div class="slide">
@@ -140,137 +134,10 @@
       </div>
   </header>
 
-  <section id="about">
-    <div class="about"> 
-        <div class="about-us">
-            <h3>Learn more about us</h3>
-        </div>
-
-        <div class="about-info">
-            <div>
-              <img class="about-img" src="images/eye.png" alt="vision">
-                <h3>
-                    Our Vision
-                </h3>
-                <p>
-                  Our vision is to be completely involved in discovering, promoting and managing a wide
-                  array of talents with different niche in the entertainment industry.
-                </p>
-            </div>
-
-            <div>
-                <img class="about-img" src="images/mission.png" alt="vision">
-                <h3>
-                    Our Mission
-                </h3>
-                <p>
-                  Our mission is to build a talent management agency that will become the leading talent
-                  management agency in the whole of South Africa and in the nearest future compete with
-                  leaders in the industry not only in South Africa but also on a global stage.
-                </p>
-            </div>
-
-            <div>
-              <img class="about-img" src="images/request.png" alt="vision">
-                <h3>
-                    Why choose us?
-                </h3>
-                <p>
-                  We ensure that we hire people that are qualified, hardworking,
-                  creative, customer centric and are ready to work to help us build a prosperous business
-                  that will benefit all of the stake holders.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="find" id="artist">
-  <h1 class="find-heading">Find an artist</h1>
-  <h3 class="men-title" id="men">Men</h3>
-
-  <div class="slide artists">
-    <a href="#" class="men-links">
-        <div class="card mb-3" style="max-width: 30vmax">
-        <div class="row g-0">
-            <div class="col-md-4">
-            <img class="men-image" src="images/first-model.jpeg" alt="..." style="width:100%;">
-            </div>
-            <div class="col-md-8">
-            <div class="card-body">
-                <h5 class="card-title">Kevin Hart <img class="card-heart" src="images/heart.png"></h5>
-            </div>
-            </div>
-        </div>
-        </div>
-    </a>
-
-    <a href="#" class="men-links">
-        <div class="card mb-3" style="max-width: 30vmax">
-        <div class="row g-0">
-            <div class="col-md-4">
-            <img src="images/second-model.jpeg" alt="..." style="width:100%;">
-            </div>
-            <div class="col-md-8">
-            <div class="card-body">
-                <h5 class="card-title">Brian Logan <img class="card-heart" src="images/heart.png"></h5>
-            </div>
-            </div>
-        </div>
-        </div>
-    </a>
-
-    <a href="#" class="men-links">
-        <div class="card mb-3" style="max-width: 30vmax">
-        <div class="row g-0">
-            <div class="col-md-4">
-            <img src="images/third-model.jpeg" alt="..." style="width:100%;">
-            </div>
-            <div class="col-md-8">
-            <div class="card-body">
-                <h5 class="card-title">Swizz Jazz <img class="card-heart" src="images/heart.png"></h5>
-            </div>
-            </div>
-        </div>
-        </div>
-    </a>
-
-    <a href="#" class="men-links">
-        <div class="card mb-3" style="max-width: 30vmax">
-        <div class="row g-0">
-            <div class="col-md-4">
-            <img src="images/fourth-model.jpeg" alt="..." style="width:100%;">
-            </div>
-            <div class="col-md-8">
-            <div class="card-body">
-                <h5 class="card-title">Basic Vanilla <img class="card-heart" src="images/heart.png"></h5>
-            </div>
-            </div>
-        </div>
-        </div>
-    </a>
-
-    <a href="#" class="men-links">
-        <div class="card mb-3" style="max-width: 30vmax">
-        <div class="row g-0">
-            <div class="col-md-4">
-            <img src="images/fifth-model.jpeg" alt="..." style="width:100%;">
-            </div>
-            <div class="col-md-8">
-            <div class="card-body">
-                <h5 class="card-title">Yellow Mellow <img class="card-heart" src="images/heart.png"></h5>
-            </div>
-            </div>
-        </div>
-        </div>
-    </a>
-</div>
-</section>
-
   <footer>
     <div class="social-container">
-        <a href="#"><img class="social-icon" src="images/facebook-icon.png"></a>
-        <a href="#"><img class="social-icon" src="images/instagram-icon.png"></a>
+        <a href="https://m.facebook.com/profile.php?id=110763530406216&ref=content_filter" target="_blank"><img class="social-icon" src="images/facebook-icon.png"></a>
+        <a href="https://www.instagram.com/our_future_talent_management/" target="_blank"><img class="social-icon" src="images/instagram-icon.png"></a>
         <a href="#"><img class="social-icon" src="images/email-icon.png"></a>
     </div>
 
