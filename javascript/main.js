@@ -12,14 +12,23 @@ function splitScroll(){
     const controller = new ScrollMagic.Controller();
     new ScrollMagic.Scene({
         duration: '200%',
-        triggerElement: '.about-us',
+        triggerElement: '.scrollTrigger',
         triggerHook: 0
     })
-        .setPin('.about-us')
+        .setPin('.scrollTrigger')
         .addTo(controller);
 }
 
-splitScroll();
+let mobile = document.body.clientWidth;
+
+if (mobile <= 470) {
+    let mobileAbout = document.getElementById('aboutUs');
+
+    mobileAbout.classList.remove('scrollTrigger');
+}
+
+    splitScroll();
+
 
 window.addEventListener('scroll', ()=> {
     let menu = document.getElementById('menu-bar');

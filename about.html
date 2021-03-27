@@ -26,7 +26,22 @@
             height: 100vh;
         }
 
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: 750px) {
+            .social-icon {
+                width: 5vmax;
+            }
+
+            .navigation-brand {
+                display: flex;
+                justify-content: center;
+                width: 25%;
+                margin: 3vmax auto;
+            }
+
+
+        }
+
+        @media screen and (max-width: 470px) {
           .find {
             background-image: url('images/background-two.jpg');
             background-size:cover;
@@ -47,12 +62,21 @@
           width: 5vmax;
         }
             
-            .about {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
+        .about {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-us {
+            width: 70%;
+            height: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
         }
 
@@ -150,21 +174,24 @@
   <section id="about">
       <h1>About</h1>
     <div class="about"> 
-        <div class="about-us">
+        <div class="about-us scrollTrigger" id="aboutUs">
             <img class="about-model" src="images/model.png">
             <h3>Discover more about us</h3>
         </div>
 
         <div class="about-info">
             <div>
-              <img class="about-img" src="images/eye.png" alt="vision">
+                <img class="about-img" src="images/eye.png" alt="vision">
                 <h3>
                     Our Vision
                 </h3>
                 <p>
-                  Our vision is to be completely involved in discovering, promoting and managing a wide
-                  array of talents with different niche in the entertainment industry.
+                    Our vision is to be completely involved in discovering, promoting and managing a wide
+                    array of talents with different niche in the entertainment industry.
+
                 </p>
+                <spans style="border-bottom: 5px dimgrey dashed; width: 20%; margin: 1rem auto;"></spans>
+
             </div>
 
             <div>
@@ -173,22 +200,24 @@
                     Our Mission
                 </h3>
                 <p>
-                  Our mission is to build a talent management agency that will become the leading talent
-                  management agency in the whole of South Africa and in the nearest future compete with
-                  leaders in the industry not only in South Africa but also on a global stage.
+                    Our mission is to build a talent management agency that will become the leading talent
+                    management agency in the whole of South Africa and in the nearest future compete with
+                    leaders in the industry not only in South Africa but also on a global stage.
                 </p>
+                <spans style="border-bottom: 5px dimgrey dashed; width: 20%; margin: 1rem auto;"></spans>
             </div>
 
             <div>
-              <img class="about-img" src="images/request.png" alt="vision">
+                <img class="about-img" src="images/request.png" alt="vision">
                 <h3>
                     Why choose us?
                 </h3>
                 <p>
-                  We ensure that we hire people that are qualified, hardworking,
-                  creative, customer centric and are ready to work to help us build a prosperous business
-                  that will benefit all of the stake holders.
+                    We ensure that we hire people that are qualified, hardworking,
+                    creative, customer centric and are ready to work to help us build a prosperous business
+                    that will benefit all of the stake holders.
                 </p>
+                <spans style="border-bottom: 5px dimgrey dashed; width: 20%; margin: 1rem auto;"></spans>
             </div>
         </div>
     </div>
