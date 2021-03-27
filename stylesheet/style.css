@@ -150,6 +150,10 @@ img {
 
 
 /********About********/
+section h1:nth-child(1) {
+    display: flex;
+    justify-content: center;
+}
 
 .about {
     display: flex;
@@ -159,8 +163,10 @@ img {
     width: 50%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .about-info {
@@ -174,11 +180,18 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: 2px black dashed;
 }
+
+
 
 .about-img {
     width: 20%;
     margin: 1rem;
+}
+
+.about-model {
+    width: 70%;
 }
 
 
