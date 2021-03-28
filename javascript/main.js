@@ -21,13 +21,15 @@ function splitScroll(){
 
 let mobile = document.body.clientWidth;
 
+
 if (mobile <= 470) {
     let mobileAbout = document.getElementById('aboutUs');
 
-    mobileAbout.classList.remove('scrollTrigger');
+    let complete = mobileAbout.classList.remove('scrollTrigger');
+    
 }
 
-    splitScroll();
+splitScroll();
 
 
 window.addEventListener('scroll', ()=> {
@@ -75,4 +77,114 @@ function myFunction() {
         li[i].style.display = "none";
       }
     }
+  }
+
+
+  var female = document.getElementById('female');
+  var male = document.getElementById('male');
+  var children = document.getElementById('children');
+  var rightForm = document.getElementById('right-form');
+  
+  female.onclick = ()=> {
+    rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
+    <input type="text" placeholder=" Waist *" required>\
+    <input type="text" placeholder=" Bust *" required>\
+    <input type="text" placeholder=" Hips *" required>\
+    <input type="text" placeholder=" Dress Size *" required>\
+    <input type="text" placeholder=" Shoe Size *" required>\
+    <input type="text" placeholder=" Hair Color *" required>\
+    <input type="text" placeholder=" Eye Color *" required>\
+    <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
+    <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
+    <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
+    <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
+    <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
+    <input type="file" id="imageUpload3" accept="image/*" style="display: none">'
+  }
+
+  male.onclick = ()=> {
+    rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
+                        <input type="text" placeholder=" Waist *" required>\
+                        <input type="text" placeholder=" Chest *" required>\
+                        <input type="text" placeholder=" Collar *" required>\
+                        <input type="text" placeholder=" Inseam *" required>\
+                        <input type="text" placeholder=" Suit *" required>\
+                        <input type="text" placeholder=" Sleeve *" required>\
+                        <input type="text" placeholder=" Shoe Size *" required>\
+                        <input type="text" placeholder=" Hair Color *" required>\
+                        <input type="text" placeholder=" Eye Color *" required>\
+                        <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
+                        <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
+                        <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
+                        <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
+                        <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
+                        <input type="file" id="imageUpload3" accept="image/*" style="display: none"></input>'
+  }
+
+  children.onclick= ()=> {
+    rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
+                          <input type="text" placeholder=" Waist *" required>\
+                          <input type="text" placeholder=" Size *" required>\
+                          <input type="text" placeholder=" Shoe Size *" required>\
+                          <input type="text" placeholder=" Hair Color *" required>\
+                          <input type="text" placeholder=" Eye Color *" required>\
+                          <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
+                          <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
+                          <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
+                          <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
+                          <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
+                          <input type="file" id="imageUpload3" accept="image/*" style="display: none">'
+  }
+
+  
+
+  female.ontouchstart = ()=> {
+    rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
+    <input type="text" placeholder=" Waist *" required>\
+    <input type="text" placeholder=" Bust *" required>\
+    <input type="text" placeholder=" Hips *" required>\
+    <input type="text" placeholder=" Dress Size *" required>\
+    <input type="text" placeholder=" Shoe Size *" required>\
+    <input type="text" placeholder=" Hair Color *" required>\
+    <input type="text" placeholder=" Eye Color *" required>\
+    <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
+    <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
+    <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
+    <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
+    <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
+    <input type="file" id="imageUpload3" accept="image/*" style="display: none">'
+  }
+
+  male.ontouchstart = ()=> {
+    rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
+                        <input type="text" placeholder=" Waist *" required>\
+                        <input type="text" placeholder=" Chest *" required>\
+                        <input type="text" placeholder=" Collar *" required>\
+                        <input type="text" placeholder=" Inseam *" required>\
+                        <input type="text" placeholder=" Suit *" required>\
+                        <input type="text" placeholder=" Sleeve *" required>\
+                        <input type="text" placeholder=" Shoe Size *" required>\
+                        <input type="text" placeholder=" Hair Color *" required>\
+                        <input type="text" placeholder=" Eye Color *" required>\
+                        <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
+                        <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
+                        <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
+                        <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
+                        <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
+                        <input type="file" id="imageUpload3" accept="image/*" style="display: none"></input>'
+  }
+
+  children.ontouchstart= ()=> {
+    rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
+                          <input type="text" placeholder=" Waist *" required>\
+                          <input type="text" placeholder=" Size *" required>\
+                          <input type="text" placeholder=" Shoe Size *" required>\
+                          <input type="text" placeholder=" Hair Color *" required>\
+                          <input type="text" placeholder=" Eye Color *" required>\
+                          <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
+                          <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
+                          <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
+                          <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
+                          <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
+                          <input type="file" id="imageUpload3" accept="image/*" style="display: none">'
   }

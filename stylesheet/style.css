@@ -217,7 +217,57 @@ section h1:nth-child(1) {
     }
 }
 
-/************effect**************/
+/************form**************/
+input,textarea, .selectable {
+    background-color: transparent;
+    border: 0.3px lightslategray solid;
+    color: lightslategray;
+}
+
+/***********Form******************/
+.form {
+    display: flex;
+    width:70%;
+    margin: auto;
+}
+
+.form-input-box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto 5px;
+}
+
+.radio {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 3%;
+}
+
+.radio input {
+    margin: 5px 2vmin;
+}
+
+.right-form {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:800px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:80%;
+        margin: auto;
+    }
+
+    .form-input-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto 5px;
+    }
 
 
-/***********search******************/
+}
