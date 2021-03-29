@@ -104,13 +104,9 @@
 
         
 
-
-        
-
-
  
      </style>
-    <title>Join - Our Future Talent Managment</title>
+    <title>Contact - Our Future Talent Management</title>
 </head>
 <body>
     
@@ -131,75 +127,58 @@
                         <a class="nav-link navigation-links" href="#">Women</a>
                         <a class="nav-link navigation-links" href="#">Men</a>
                         <a class="nav-link navigation-links" href="#">Services</a>
-                        <a class="nav-link navigation-links active-page" href="join.html">Join</a>
+                        <a class="nav-link navigation-links" href="join.html">Join</a>
                         <a class="nav-link navigation-links" href="#">Our Team</a>
-                        <a class="nav-link navigation-links" href="contact.html">Contact Us</a>
+                        <a class="nav-link navigation-links active-page" href="contact.html">Contact Us</a>
                 </div>
             </div>
         </nav>
 
         <section>
-            <h1>Join us today</h1>
-            <form class="form">
-                <div class="form-input-box">
-                    <input type="text" placeholder=" First Name *" required>
-                    <input type="text" placeholder=" Last Name *" required>
-                    <input type="email" placeholder=" Email *" required>
-                    <input type="tel" placeholder=" Phone *" required>
-                    <input type="text" placeholder=" Address *" required>
-                    <input type="text" placeholder=" City *" required>
-                    <input type="text" placeholder=" Province *" list="province" name="province" required>
-                    <datalist id="province">
-                        <option value="Gauteng">
-                        <option value="North West">
-                        <option value="Mpumalanga">
-                        <option value="KwaZulu-Natal">
-                        <option value="Free State">
-                        <option value="Limpopo">
-                        <option value="Eastern Cape">
-                        <option value="Northen Cape">
-                        <option value="Western Cape">
-                      </datalist>
-                    <input type="date" placeholder=" Date of Birth *" required>
-                    <input type="text" placeholder=" Instagram *" required>
-                    <input type="text" placeholder=" Facebook *" required>
-                    <textarea>Message</textarea>
-                </div>
+            <h1>Reach out to us</h1>
+            <div class="contact-page">
+                <div class="accordion accordion-flush" id="contactAccordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Book an Artist
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#contactAccordion">
+                        <div class="accordion-body"><a href="mailto:info@ourfuturetalentmanagement.co.za?subject=Book an Artist!&body=To whom it may concern," target="_blank">info@ourfuturetalentmanagement.co.za</a></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Get a Quote
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#contactAccordion">
+                        <div class="accordion-body"><a href="mailto:info@ourfuturetalentmanagement.co.za?subject=Book an Artist!&body=To whom it may concern," target="_blank">info@ourfuturetalentmanagement.co.za</a></div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Find more Info
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#contactAccordion">
+                        <div class="accordion-body"><a href="mailto:info@ourfuturetalentmanagement.co.za?subject=Book an Artist!&body=To whom it may concern," target="_blank">info@ourfuturetalentmanagement.co.za</a></div>
+                      </div>
+                    </div>
+                  </div>
 
-                <div class="form-input-box"> 
-                    <div class="radio">
-                        <span ontouchstart="maleTouch()" onckick="maleTouch()">
-                            <input type="radio" id="male"  name="artist" value="male" class="child" checked>
-                            <label for="male">Male</label><br> 
-                        </span>
-                        <span ontouchstart="femaleTouch()" onckick="femaleTouch()">
-                            <input type="radio" id="female"  name="artist" value="female" class="child">
-                            <label for="female" >Female</label><br>
-                        </span>
-                        <span ontouchstart="childrenTouch()" onckick="childrenTouch()">
-                            <input type="radio" id="children"  name="artist" value="children" class="child">
-                            <label for="children">Children</label>
-                        </span>
-                        
-                    </div>
-                    <div class="right-form" id="right-form">
-                        <input type="text" placeholder=" Height *" required>
-                        <input type="text" placeholder=" Waist *" required>
-                        <input type="text" placeholder=" Chest *" required>
-                        <input type="text" placeholder=" Shoe Size *" required>
-                        <input type="text" placeholder=" Hair Color *" required>
-                        <input type="text" placeholder=" Eye Color *" required>
-                        <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>
-                        <input type="file" id="imageUpload1" accept="image/*" style="display: none">
-                        <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>
-                        <input type="file" id="imageUpload2" accept="image/*" style="display: none">
-                        <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>
-                        <input type="file" id="imageUpload3" accept="image/*" style="display: none"></input>
-                    </div>
-                    <input type="submit" value="Join" class="submit">
-                    
+                  <div>
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=maboneng&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:450px;width:600px;}</style><a href="https://www.embedgooglemap.net">google maps insert</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:600px;}</style></div></div>
                 </div>
-            </form>
+            </div>
+
+            
+
+
+            
         </section>
 
 

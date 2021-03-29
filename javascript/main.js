@@ -63,15 +63,65 @@ window.addEventListener('scroll', ()=> {
   var male = document.getElementById('male');
   var children = document.getElementById('children');
   var rightForm = document.getElementById('right-form');
+  var width = window.innerWidth;
 
+  function maleTouch() {
+    let rightForm = document.getElementById('right-form');
+    rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
+                        <input type="text" placeholder=" Waist *" required>\
+                        <input type="text" placeholder=" Chest *" required>\
+                        <input type="text" placeholder=" Shoe Size *" required>\
+                        <input type="text" placeholder=" Hair Color *" required>\
+                        <input type="text" placeholder=" Eye Color *" required>\
+                        <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
+                        <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
+                        <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
+                        <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
+                        <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
+                        <input type="file" id="imageUpload3" accept="image/*" style="display: none"></input>'
+  }
 
- 
+  function femaleTouch() {
+    let rightForm = document.getElementById('right-form');
+    rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
+    <input type="text" placeholder=" Waist *" required>\
+    <input type="text" placeholder=" Dress Size *" required>\
+    <input type="text" placeholder=" Shoe Size *" required>\
+    <input type="text" placeholder=" Hair Color *" required>\
+    <input type="text" placeholder=" Eye Color *" required>\
+    <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
+    <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
+    <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
+    <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
+    <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
+    <input type="file" id="imageUpload3" accept="image/*" style="display: none">'
+  }
 
+  function childrenTouch() {
+    let rightForm = document.getElementById('right-form');
+    rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
+                          <input type="text" placeholder=" Waist *" required>\
+                          <input type="text" placeholder=" Size *" required>\
+                          <input type="text" placeholder=" Shoe Size *" required>\
+                          <input type="text" placeholder=" Hair Color *" required>\
+                          <input type="text" placeholder=" Eye Color *" required>\
+                          <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
+                          <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
+                          <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
+                          <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
+                          <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
+                          <input type="file" id="imageUpload3" accept="image/*" style="display: none">'
+  }
+
+ if (width<=800) {
+  
+  
+ }
+
+ else {
   female.onclick = ()=> {
     rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
     <input type="text" placeholder=" Waist *" required>\
-    <input type="text" placeholder=" Bust *" required>\
-    <input type="text" placeholder=" Hips *" required>\
     <input type="text" placeholder=" Dress Size *" required>\
     <input type="text" placeholder=" Shoe Size *" required>\
     <input type="text" placeholder=" Hair Color *" required>\
@@ -88,10 +138,6 @@ window.addEventListener('scroll', ()=> {
     rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
                         <input type="text" placeholder=" Waist *" required>\
                         <input type="text" placeholder=" Chest *" required>\
-                        <input type="text" placeholder=" Collar *" required>\
-                        <input type="text" placeholder=" Inseam *" required>\
-                        <input type="text" placeholder=" Suit *" required>\
-                        <input type="text" placeholder=" Sleeve *" required>\
                         <input type="text" placeholder=" Shoe Size *" required>\
                         <input type="text" placeholder=" Hair Color *" required>\
                         <input type="text" placeholder=" Eye Color *" required>\
@@ -117,6 +163,9 @@ window.addEventListener('scroll', ()=> {
                           <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
                           <input type="file" id="imageUpload3" accept="image/*" style="display: none">'
   }
+ }
+
+  
 
   
 
@@ -171,56 +220,4 @@ window.addEventListener('scroll', ()=> {
   //                         <input type="file" id="imageUpload3" accept="image/*" style="display: none">'
   // }
 
-  function maleTouch() {
-    let rightForm = document.getElementById('right-form');
-    rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
-                        <input type="text" placeholder=" Waist *" required>\
-                        <input type="text" placeholder=" Chest *" required>\
-                        <input type="text" placeholder=" Collar *" required>\
-                        <input type="text" placeholder=" Inseam *" required>\
-                        <input type="text" placeholder=" Suit *" required>\
-                        <input type="text" placeholder=" Sleeve *" required>\
-                        <input type="text" placeholder=" Shoe Size *" required>\
-                        <input type="text" placeholder=" Hair Color *" required>\
-                        <input type="text" placeholder=" Eye Color *" required>\
-                        <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
-                        <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
-                        <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
-                        <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
-                        <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
-                        <input type="file" id="imageUpload3" accept="image/*" style="display: none"></input>'
-  }
-
-  function femaleTouch() {
-    let rightForm = document.getElementById('right-form');
-    rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
-    <input type="text" placeholder=" Waist *" required>\
-    <input type="text" placeholder=" Bust *" required>\
-    <input type="text" placeholder=" Hips *" required>\
-    <input type="text" placeholder=" Dress Size *" required>\
-    <input type="text" placeholder=" Shoe Size *" required>\
-    <input type="text" placeholder=" Hair Color *" required>\
-    <input type="text" placeholder=" Eye Color *" required>\
-    <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
-    <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
-    <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
-    <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
-    <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
-    <input type="file" id="imageUpload3" accept="image/*" style="display: none">'
-  }
-
-  function childrenTouch() {
-    let rightForm = document.getElementById('right-form');
-    rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
-                          <input type="text" placeholder=" Waist *" required>\
-                          <input type="text" placeholder=" Size *" required>\
-                          <input type="text" placeholder=" Shoe Size *" required>\
-                          <input type="text" placeholder=" Hair Color *" required>\
-                          <input type="text" placeholder=" Eye Color *" required>\
-                          <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
-                          <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
-                          <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
-                          <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
-                          <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
-                          <input type="file" id="imageUpload3" accept="image/*" style="display: none">'
-  }
+  

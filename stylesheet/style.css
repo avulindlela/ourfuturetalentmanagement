@@ -8,6 +8,7 @@
 
 body {
     background-color: #dddddd;
+    background: linear-gradient(to right, #dddddd 0%, #b0b0b0 100%);
 }
 
 /*****************header***************************/
@@ -254,6 +255,10 @@ input,textarea, .selectable {
     flex-direction: column;
 }
 
+.submit:hover {
+    background-color: red;
+}
+
 @media screen and (max-width:800px) {
     .form {
         display: flex;
@@ -272,4 +277,10 @@ input,textarea, .selectable {
     }
 
 
+}
+
+.contact-page {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
 }
