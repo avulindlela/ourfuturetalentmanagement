@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: lightgoldenrodyellow;
+    background-color: #dddddd;
 }
 
 /*****************header***************************/
@@ -229,6 +229,7 @@ input,textarea, .selectable {
     display: flex;
     width:70%;
     margin: auto;
+    background-color:#f8f8ff;
 }
 
 .form-input-box {
@@ -260,6 +261,7 @@ input,textarea, .selectable {
         align-items: center;
         width:80%;
         margin: auto;
+        
     }
 
     .form-input-box {
