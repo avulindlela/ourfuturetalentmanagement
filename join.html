@@ -131,7 +131,7 @@
                         <a class="nav-link navigation-links" href="#">Men</a>
                         <a class="nav-link navigation-links" href="#">Services</a>
                         <a class="nav-link navigation-links active-page" href="join.html">Join</a>
-                        <a class="nav-link navigation-links" href="#">Our Team</a>
+                        <a class="nav-link navigation-links" href="team.html">Our Team</a>
                         <a class="nav-link navigation-links" href="contact.html">Contact Us</a>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
                             <option value="Northen Cape">
                             <option value="Western Cape">
                         </datalist>
-                        <input type="date" placeholder=" Date of Birth *" required>
+                        <input type="text" placeholder=" Date of Birth *" required>
                         <input type="text" placeholder=" Instagram *" required>
                         <input type="text" placeholder=" Facebook *" required>
                         <textarea>Message</textarea>
@@ -170,15 +170,15 @@
 
                     <fieldset class="form-input-box">
                         <div class="radio">
-                            <span ontouchstart="maleTouch()" onckick="maleTouch()">
+                            <span ontouchstart="maleTouch()" onclick="maleTouch()">
                                 <input type="radio" id="male" name="artist" value="male" class="child" checked>
                                 <label for="male">Male</label><br>
                             </span>
-                            <span ontouchstart="femaleTouch()" onckick="femaleTouch()">
+                            <span ontouchstart="femaleTouch()" onclick="femaleTouch()">
                                 <input type="radio" id="female" name="artist" value="female" class="child">
                                 <label for="female">Female</label><br>
                             </span>
-                            <span ontouchstart="childrenTouch()" onckick="childrenTouch()">
+                            <span ontouchstart="childrenTouch()" onclick="childrenTouch()">
                                 <input type="radio" id="children" name="artist" value="children" class="child">
                                 <label for="children">Children</label>
                             </span>
@@ -200,8 +200,8 @@
                         </div>
                     </fieldset>
                 </div><br /><br />
-                <button type="submit" class="submit" id="submit" disabled > Join </button>
-                <div style="font-size: xx-small; display: flex; align-self: center;">
+                <button type="submit" class="submit" id="submit" disabled="true" > Join </button>
+                <div style="font-size: xx-small; display: flex; align-self: center;" >
                     <input type="checkbox" id="agreement" name="agreement" value="Policy" onclick="policyAgreement()" ontouchstart="policyAgreement()">
                     <label for="agreement">By ticking on the following checkbox, I agree by Our Future Talent Management Privacy Policies.</label><br>
                 </div>

@@ -112,64 +112,21 @@ function collapseMenu() {
                           <input type="file" id="imageUpload3" accept="image/*" style="display: none">'
   }
 
- if (width<=800) {
-  
-  
- }
-
- else {
-  female.onclick = ()=> {
-    rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
-    <input type="text" placeholder=" Waist *" required>\
-    <input type="text" placeholder=" Dress Size *" required>\
-    <input type="text" placeholder=" Shoe Size *" required>\
-    <input type="text" placeholder=" Hair Color *" required>\
-    <input type="text" placeholder=" Eye Color *" required>\
-    <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
-    <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
-    <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
-    <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
-    <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
-    <input type="file" id="imageUpload3" accept="image/*" style="display: none">'
-  }
-
-  male.onclick = ()=> {
-    rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
-                        <input type="text" placeholder=" Waist *" required>\
-                        <input type="text" placeholder=" Chest *" required>\
-                        <input type="text" placeholder=" Shoe Size *" required>\
-                        <input type="text" placeholder=" Hair Color *" required>\
-                        <input type="text" placeholder=" Eye Color *" required>\
-                        <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
-                        <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
-                        <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
-                        <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
-                        <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
-                        <input type="file" id="imageUpload3" accept="image/*" style="display: none"></input>'
-  }
-
-  children.onclick= ()=> {
-    rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
-                          <input type="text" placeholder=" Waist *" required>\
-                          <input type="text" placeholder=" Size *" required>\
-                          <input type="text" placeholder=" Shoe Size *" required>\
-                          <input type="text" placeholder=" Hair Color *" required>\
-                          <input type="text" placeholder=" Eye Color *" required>\
-                          <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
-                          <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
-                          <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
-                          <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
-                          <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
-                          <input type="file" id="imageUpload3" accept="image/*" style="display: none">'
-  }
- }
-
+ 
   
 
-var agreement = document.getElementById('agreement');
-var submitButton = document.getElementById('submit');
 
 function policyAgreement() {
     let submitButton = document.getElementById('submit');
     submitButton.removeAttribute('disabled');
+
+      setTimeout(function(){
+        disableAgreement(); 
+     }, 1000);
+
+}
+
+function disableAgreement() {
+  let checkbox = document.getElementById('agreement');
+  checkbox.setAttribute('disabled', 'true');
 }
