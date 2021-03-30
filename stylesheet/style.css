@@ -20,8 +20,7 @@ body {
 }
 
 .brand-logo {
-    width:100%;
-    padding: 3rem auto;
+    width: 100%;
 }
 
 .navigation-bar {
@@ -92,16 +91,12 @@ body {
         font-size: x-small;
     }
 
-    .heading{
-        font-weight:550;
-    }
+    
 
 
 }
 
-img {
-    width:fit-content;
-}
+
 
 .artists {
     width: 100%;
@@ -200,6 +195,12 @@ section h1:nth-child(1) {
     width: 70%;
 }
 
+@media screen and (min-width: 1080px) {
+    .about-model {
+        width: 60%;
+    }
+}
+
 
 @media screen and (max-width: 380px) {
     .about-us {
@@ -228,9 +229,9 @@ input,textarea, .selectable {
 /***********Form******************/
 .form {
     display: flex;
-    width:70%;
+    width: 70%;
     margin: auto;
-    background-color:#f8f8ff;
+    background-color: #F7F7F7;
 }
 
 .form-input-box {
@@ -255,9 +256,19 @@ input,textarea, .selectable {
     flex-direction: column;
 }
 
-.submit:hover {
-    background-color: red;
+.submit {
+    background-color: #dddddd;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 20%;
+    color: white;
+    background-color: RGBA(255,0,0, 70%);
 }
+
+    
+
+    
 
 @media screen and (max-width:800px) {
     .form {
@@ -279,8 +290,3 @@ input,textarea, .selectable {
 
 }
 
-.contact-page {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-}

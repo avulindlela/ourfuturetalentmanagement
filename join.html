@@ -102,7 +102,6 @@
             margin: auto 1rem;
         }
 
-        
 
 
         
@@ -112,21 +111,21 @@
      </style>
     <title>Join - Our Future Talent Managment</title>
 </head>
-<body>
+<body onscroll="collapseMenu()">
     
         <div class="navigation-brand">
             <a href="index.html">
                 <img class="brand-logo" src="images/our-future-logo.jpeg" alt="ourfuturetalentmanagement">
             </a>
         </div>
-        <nav class="navbar sticky-top navbar-expand-md" style="background-color:#dddddd; background: linear-gradient(to right, #dddddd 0%, #b0b0b0 100%);">
+        <nav class="navbar sticky-top navbar-expand-md" style="background-color: #dddddd; background: linear-gradient(to right, #dddddd 0%, #b0b0b0 100%);">
             <div class="container-fluid">
                 <button id="menu-bar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#our-future-menu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <img class="menu-icon" src="images/menu-icon.png">
                 </button>
                 <div class="collapse navbar-collapse" id="our-future-menu">
                     <div class="navbar-nav">
-                        <a class="nav-link navigation-links" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link navigation-links " aria-current="page" href="index.html">Home</a>
                         <a class="nav-link navigation-links" href="about.html">About</a>
                         <a class="nav-link navigation-links" href="#">Women</a>
                         <a class="nav-link navigation-links" href="#">Men</a>
@@ -134,71 +133,80 @@
                         <a class="nav-link navigation-links active-page" href="join.html">Join</a>
                         <a class="nav-link navigation-links" href="#">Our Team</a>
                         <a class="nav-link navigation-links" href="contact.html">Contact Us</a>
+                    </div>
                 </div>
-            </div>
+                </div>
         </nav>
 
         <section>
             <h1>Join us today</h1>
-            <form class="form">
-                <div class="form-input-box">
-                    <input type="text" placeholder=" First Name *" required>
-                    <input type="text" placeholder=" Last Name *" required>
-                    <input type="email" placeholder=" Email *" required>
-                    <input type="tel" placeholder=" Phone *" required>
-                    <input type="text" placeholder=" Address *" required>
-                    <input type="text" placeholder=" City *" required>
-                    <input type="text" placeholder=" Province *" list="province" name="province" required>
-                    <datalist id="province">
-                        <option value="Gauteng">
-                        <option value="North West">
-                        <option value="Mpumalanga">
-                        <option value="KwaZulu-Natal">
-                        <option value="Free State">
-                        <option value="Limpopo">
-                        <option value="Eastern Cape">
-                        <option value="Northen Cape">
-                        <option value="Western Cape">
-                      </datalist>
-                    <input type="date" placeholder=" Date of Birth *" required>
-                    <input type="text" placeholder=" Instagram *" required>
-                    <input type="text" placeholder=" Facebook *" required>
-                    <textarea>Message</textarea>
-                </div>
+            <form style="display: flex; flex-direction: column;">
+                <div class="form">
+                    <fieldset class="form-input-box">
+                        <legend>Personal Details</legend>
+                        <input type="text" placeholder=" First Name *" required>
+                        <input type="text" placeholder=" Last Name *" required>
+                        <input type="email" placeholder=" Email *" required>
+                        <input type="tel" placeholder=" Phone *" required>
+                        <input type="text" placeholder=" Address *" required>
+                        <input type="text" placeholder=" City *" required>
+                        <input type="text" placeholder=" Province *" list="province" name="province" required>
+                        <datalist id="province">
+                            <option value="Gauteng">
+                            <option value="North West">
+                            <option value="Mpumalanga">
+                            <option value="KwaZulu-Natal">
+                            <option value="Free State">
+                            <option value="Limpopo">
+                            <option value="Eastern Cape">
+                            <option value="Northen Cape">
+                            <option value="Western Cape">
+                        </datalist>
+                        <input type="date" placeholder=" Date of Birth *" required>
+                        <input type="text" placeholder=" Instagram *" required>
+                        <input type="text" placeholder=" Facebook *" required>
+                        <textarea>Message</textarea>
+                    </fieldset>
 
-                <div class="form-input-box"> 
-                    <div class="radio">
-                        <span ontouchstart="maleTouch()" onckick="maleTouch()">
-                            <input type="radio" id="male"  name="artist" value="male" class="child" checked>
-                            <label for="male">Male</label><br> 
-                        </span>
-                        <span ontouchstart="femaleTouch()" onckick="femaleTouch()">
-                            <input type="radio" id="female"  name="artist" value="female" class="child">
-                            <label for="female" >Female</label><br>
-                        </span>
-                        <span ontouchstart="childrenTouch()" onckick="childrenTouch()">
-                            <input type="radio" id="children"  name="artist" value="children" class="child">
-                            <label for="children">Children</label>
-                        </span>
-                        
-                    </div>
-                    <div class="right-form" id="right-form">
-                        <input type="text" placeholder=" Height *" required>
-                        <input type="text" placeholder=" Waist *" required>
-                        <input type="text" placeholder=" Chest *" required>
-                        <input type="text" placeholder=" Shoe Size *" required>
-                        <input type="text" placeholder=" Hair Color *" required>
-                        <input type="text" placeholder=" Eye Color *" required>
-                        <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>
-                        <input type="file" id="imageUpload1" accept="image/*" style="display: none">
-                        <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>
-                        <input type="file" id="imageUpload2" accept="image/*" style="display: none">
-                        <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>
-                        <input type="file" id="imageUpload3" accept="image/*" style="display: none"></input>
-                    </div>
-                    <input type="submit" value="Join" class="submit">
-                    
+                    <fieldset class="form-input-box">
+                        <div class="radio">
+                            <span ontouchstart="maleTouch()" onckick="maleTouch()">
+                                <input type="radio" id="male" name="artist" value="male" class="child" checked>
+                                <label for="male">Male</label><br>
+                            </span>
+                            <span ontouchstart="femaleTouch()" onckick="femaleTouch()">
+                                <input type="radio" id="female" name="artist" value="female" class="child">
+                                <label for="female">Female</label><br>
+                            </span>
+                            <span ontouchstart="childrenTouch()" onckick="childrenTouch()">
+                                <input type="radio" id="children" name="artist" value="children" class="child">
+                                <label for="children">Children</label>
+                            </span>
+
+                        </div>
+                        <div class="right-form" id="right-form">
+                            <input type="text" placeholder=" Height *" required>
+                            <input type="text" placeholder=" Waist *" required>
+                            <input type="text" placeholder=" Chest *" required>
+                            <input type="text" placeholder=" Shoe Size *" required>
+                            <input type="text" placeholder=" Hair Color *" required>
+                            <input type="text" placeholder=" Eye Color *" required>
+                            <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>
+                            <input type="file" id="imageUpload1" accept="image/*" style="display: none">
+                            <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>
+                            <input type="file" id="imageUpload2" accept="image/*" style="display: none">
+                            <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>
+                            <input type="file" id="imageUpload3" accept="image/*" style="display: none">
+                        </div>
+                    </fieldset>
+                </div><br /><br />
+                <button type="submit" class="submit" id="submit" disabled > Join </button>
+                <div style="font-size: xx-small; display: flex; align-self: center;">
+                    <input type="checkbox" id="agreement" name="agreement" value="Policy" onclick="policyAgreement()" ontouchstart="policyAgreement()">
+                    <label for="agreement">By ticking on the following checkbox, I agree by Our Future Talent Management Privacy Policies.</label><br>
                 </div>
+                
+
             </form>
         </section>
 

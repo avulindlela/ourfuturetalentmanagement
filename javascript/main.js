@@ -32,19 +32,18 @@ if (mobile <= 470) {
 splitScroll();
 
 
-window.addEventListener('scroll', ()=> {
+function collapseMenu() {
     let menu = document.getElementById('menu-bar');
     let menuInfo = document.getElementById('our-future-menu');
     let scrollOffset = window.pageYOffset;
 
-    if (scrollOffset <=149 || scrollOffset>=150) {
-        menu.classList.add('collapsed');
-        menu.setAttribute('aria-expanded', 'false');
-        menuInfo.classList.remove('show');
-        menuInfo.classList.remove('collapsing');
-    }
-    
-})
+    menu.classList.add('collapsed');
+    menu.setAttribute('aria-expanded', 'false');
+    menuInfo.classList.remove('show');
+    menuInfo.classList.remove('collapsing');
+}
+
+
 
 
 /*******************Search Bar*********** */
@@ -167,57 +166,10 @@ window.addEventListener('scroll', ()=> {
 
   
 
-  
+var agreement = document.getElementById('agreement');
+var submitButton = document.getElementById('submit');
 
-  // female.ontouchstart = ()=> {
-  //   rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
-  //   <input type="text" placeholder=" Waist *" required>\
-  //   <input type="text" placeholder=" Bust *" required>\
-  //   <input type="text" placeholder=" Hips *" required>\
-  //   <input type="text" placeholder=" Dress Size *" required>\
-  //   <input type="text" placeholder=" Shoe Size *" required>\
-  //   <input type="text" placeholder=" Hair Color *" required>\
-  //   <input type="text" placeholder=" Eye Color *" required>\
-  //   <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
-  //   <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
-  //   <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
-  //   <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
-  //   <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
-  //   <input type="file" id="imageUpload3" accept="image/*" style="display: none">'
-  // }
-
-  // male.ontouchstart = ()=> {
-  //   rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
-  //                       <input type="text" placeholder=" Waist *" required>\
-  //                       <input type="text" placeholder=" Chest *" required>\
-  //                       <input type="text" placeholder=" Collar *" required>\
-  //                       <input type="text" placeholder=" Inseam *" required>\
-  //                       <input type="text" placeholder=" Suit *" required>\
-  //                       <input type="text" placeholder=" Sleeve *" required>\
-  //                       <input type="text" placeholder=" Shoe Size *" required>\
-  //                       <input type="text" placeholder=" Hair Color *" required>\
-  //                       <input type="text" placeholder=" Eye Color *" required>\
-  //                       <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
-  //                       <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
-  //                       <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
-  //                       <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
-  //                       <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
-  //                       <input type="file" id="imageUpload3" accept="image/*" style="display: none"></input>'
-  // }
-
-  // children.ontouchstart= ()=> {
-  //   rightForm.innerHTML = '<input type="text" placeholder=" Height *" required>\
-  //                         <input type="text" placeholder=" Waist *" required>\
-  //                         <input type="text" placeholder=" Size *" required>\
-  //                         <input type="text" placeholder=" Shoe Size *" required>\
-  //                         <input type="text" placeholder=" Hair Color *" required>\
-  //                         <input type="text" placeholder=" Eye Color *" required>\
-  //                         <label for="imageUpload1" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 1 *</label>\
-  //                         <input type="file" id="imageUpload1" accept="image/*" style="display: none">\
-  //                         <label for="imageUpload2" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 2 *</label>\
-  //                         <input type="file" id="imageUpload2" accept="image/*" style="display: none">\
-  //                         <label for="imageUpload3" class="btn btn-block selectable" style="text-align: left; padding-left:5px;">Image 3 *</label>\
-  //                         <input type="file" id="imageUpload3" accept="image/*" style="display: none">'
-  // }
-
-  
+function policyAgreement() {
+    let submitButton = document.getElementById('submit');
+    submitButton.removeAttribute('disabled');
+}
