@@ -473,3 +473,10 @@ input,textarea, .selectable {
     width: 90%;
     margin: auto;
 }
+
+/*****Model page*/
+.model-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
