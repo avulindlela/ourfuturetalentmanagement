@@ -134,7 +134,7 @@ function disableAgreement() {
 
 /**********Gallery**********/
 
-    var gallery = document.querySelector('.galleries');
+    var gallery = document.getElementById('gallery');
     var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
     var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
     var resizeAll = function () {
@@ -171,5 +171,4 @@ function disableAgreement() {
 
 
  
-
 
