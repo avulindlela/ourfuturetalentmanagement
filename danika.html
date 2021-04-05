@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="talent, models, agency, artists, artist management, our future talent management">
+    <meta name="description" content="Our Future Talent Management is a registered talent management agency that intends having a footprint in the entertainment industry not just in South Africa but all across the world.">
+    <title>Danika Van Der Watt - Our Future Talent Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <link rel="stylesheet" href="stylesheet/style.css">
+
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+
+
+    <style>
+        header {
+            background-image: url('images/background-one.jpg');
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+
+        .player-contact {
+            width: 30%;
+        }
+
+        .find {
+            background-image: url('images/background-two.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+
+        @media screen and (max-width: 900px) {
+            .player-contact {
+                width: 40%;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            .social-icon {
+                width: 5vmax;
+            }
+
+            .navigation-brand {
+                display: flex;
+                justify-content: center;
+                width: 25%;
+                margin: 3vmax auto;
+            }
+
+            .player-contact {
+                width: 60%;
+            }
+        }
+
+        @media screen and (max-width: 470px) {
+            .find {
+                background-image: url('images/background-two.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                height: 290vh;
+            }
+
+            .player-contact {
+                width: 90%;
+            }
+
+            /*
+          header {
+            background-image: url('images/background-one.jpg');
+            background-position: top;
+            background-size:cover;
+            background-repeat:no-repeat;
+            height: 100vh;
+        } */
+
+            .social-icon {
+                width: 5vmax;
+            }
+
+            .about {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .about-us {
+                width: 70%;
+                height: 100vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .model-details {
+            display: flex;
+        }
+
+        #model-info {
+            margin: auto;
+            width: 50%;
+        }
+
+        .model-details a {
+            cursor: pointer;
+        }
+
+        .material-icons {
+            position: relative;
+            left: 4rem;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            float: left;
+            margin: 5px;
+        }
+
+       
+        /*****Gallery****/
+
+        .hello {
+            opacity: 1 !important;
+        }
+
+        .full {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            z-index: 1;
+        }
+
+        @media screen and (min-width: 700px) {
+            .full {
+                position: fixed;
+                left: 0;
+                top: 0;
+                height: 100%;
+                z-index: 1;
+                margin: auto;
+            }
+        }
+
+        .full .content {
+            background-color: rgba(0,0,0,0.75) !important;
+            height: 100%;
+            width: 100%;
+            display: grid;
+        }
+
+            .full .content img {
+                left: 50%;
+                transform: translate3d(0, 0, 0);
+                animation: zoomin 1s ease;
+                max-width: 100%;
+                max-height: 100%;
+                margin: auto;
+            }
+
+        .byebye {
+            opacity: 0;
+        }
+
+            .byebye:hover {
+                transform: scale(0.2) !important;
+            }
+
+        .gallery {
+            display: grid;
+            grid-column-gap: 8px;
+            grid-row-gap: 8px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-auto-rows: 8px;
+            height: 100vh;
+        }
+
+            .gallery img {
+                max-width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 0 16px #333;
+                transition: all 1.5s ease;
+            }
+
+
+                .gallery img:hover {
+                    box-shadow: 0 0 32px #333;
+                }
+
+            .gallery .content {
+                padding: 4px;
+            }
+
+            .gallery .gallery-item {
+                transition: transform 300ms ease;
+                transition: all 0.5s ease;
+                cursor: pointer;
+            }
+
+                .gallery .gallery-item:hover {
+                    transform: scale(1.025);
+                }
+
+
+        @media (max-width: 470px) {
+            .gallery {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+            }
+
+        }
+
+       
+    </style>
+
+</head>
+<body onscroll="collapseMenu()">
+
+    <div class="navigation-brand">
+        <a href="index.html">
+            <img class="brand-logo" src="images/our-future-logo.jpeg" alt="ourfuturetalentmanagement">
+        </a>
+    </div>
+    <nav class="navbar sticky-top navbar-expand-md" style="background-color: #dddddd; background: linear-gradient(to right, #dddddd 0%, #b0b0b0 100%);">
+        <div class="container-fluid">
+            <button id="menu-bar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#our-future-menu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <img class="menu-icon" src="images/menu-icon.png">
+            </button>
+            <div class="collapse navbar-collapse" id="our-future-menu">
+                <div class="navbar-nav">
+                    <a class="nav-link navigation-links " aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link navigation-links" href="about.html">About</a>
+                    <a class="nav-link navigation-links" href="women.html">Women</a>
+                    <a class="nav-link navigation-links" href="men.html">Men</a>
+                    <a class="nav-link navigation-links" href="services.html">Services</a>
+                    <a class="nav-link navigation-links" href="join.html">Join</a>
+                    <a class="nav-link navigation-links" href="team.html">Our Team</a>
+                    <a class="nav-link navigation-links" href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="women.html#ida" style="text-decoration: none; color: black;"> Back</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Danika Van Der Watt</li>
+        </ol>
+    </nav>
+
+    <section class="model-page" id="model-page">
+        <div class="model-details">
+            <h1 style="display: flex; justify-content: center; align-items: center;">
+                Ida Van Der Watt
+            </h1>
+            <a data-bs-toggle="collapse" data-bs-target="#model-info" style="margin:10px;">
+                <img src="images/info-icon.png" width="70%" />
+            </a>
+
+        </div>
+
+        <div class="collapse" id="model-info">
+            <ul>
+                <li>
+                    Age: 12
+                </li>
+                <li>
+                    Weight: 52kg
+                </li>
+                <li>
+                    Size: 32
+                </li>
+                <li>
+                    Waist: 71.5cm
+                </li>
+                <li>
+                    Height: 1.59m
+                </li>
+                <li>
+                    Hips: 90.5cm
+                </li>
+                <li>
+                    Bust: 36B
+                </li>
+                <li>
+                    Shoe: 5
+                </li>
+                <!--<li>
+                    <span class="player-contact">
+                        <a href="#" target="_blank"><img class="model-contact" src="images/player-facebook.png"></a>
+                        <a href="#" target="_blank"><img class="model-contact" src="images/player-instagram.png"></a>
+                        <a href="#" target="_blank"><img class="model-contact" src="images/player-twitter.png"></a>
+                    </span>
+                </li>-->
+            </ul>
+        </div>
+
+
+
+        <div class="gallery" id="gallery">
+            <div class="gallery-item">
+                <div class="content"><img src="images/danika/1.jpg" alt=""></div>
+            </div>
+            <div class="gallery-item">
+                <div class="content"><img src="images/danika/2.jpg" alt=""></div>
+            </div>
+            <div class="gallery-item">
+                <div class="content"><img src="images/danika/3.jpg" alt=""></div>
+            </div>
+            <div class="gallery-item">
+                <div class="content"><img src="images/danika/4.jpg" alt=""></div>
+            </div>
+            <div class="gallery-item">
+                <div class="content"><img src="images/danika/5.jpg" alt=""></div>
+            </div>
+            <div class="gallery-item">
+                <div class="content"><img src="images/danika/6.jpg" alt=""></div>
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <footer>
+        <div class="social-container">
+            <a href="https://m.facebook.com/profile.php?id=110763530406216&ref=content_filter" target="_blank"><img class="social-icon" src="images/facebook-icon.png"></a>
+            <a href="https://www.instagram.com/our_future_talent_management/" target="_blank"><img class="social-icon" src="images/instagram-icon.png"></a>
+            <a href="mailto:info@ourfuturetalentmanagement.co.za?subject=Online Enquiry!&body=To whom it may concern," target="_blank"><img class="social-icon" src="images/email-icon.png"></a>
+        </div>
+
+        <div class="rights">
+            <p class="copy-rights">Our Future Talent Management &copy; Copy Right Reserved 2021</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous"></script>
+    <script src="javascript/main.js"></script>
+</body>
+</html>
