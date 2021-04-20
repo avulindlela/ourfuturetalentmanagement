@@ -334,6 +334,7 @@ input,textarea, .selectable {
 .card-box {
     display: flex;
     flex-direction: column;
+    align-self: center;
 }
 
 .card {
@@ -414,6 +415,8 @@ input,textarea, .selectable {
     display: flex;
     width: 80%;
     margin: auto;
+    align-items: center !important;
+    justify-content: center;
 
 }
 
@@ -422,7 +425,7 @@ input,textarea, .selectable {
 }
 
 .player-contact img {
-    width: 100%;
+    width: 2rem;;
 }
 
 
